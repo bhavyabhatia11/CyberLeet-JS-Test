@@ -7,7 +7,15 @@
  * @next words
  */
 
-
+function sentence(str){
+    var sentence = "";
+    for(var i=0; i< str.length-1 ; i++){
+        sentence = sentence.concat(str[i], " ");
+    }
+    sentence = sentence.concat(str[i]);
+   
+    return sentence;
+}
 //* Begin of tests
 const assert = require('assert')
 

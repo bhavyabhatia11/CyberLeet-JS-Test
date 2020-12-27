@@ -9,9 +9,11 @@
  */
 
 // Your code :
+const escapeStr = " \\\"\'\/\`"
 
 //* Begin of tests
 const assert = require('assert')
+const { Console } = require('console')
 
 assert.strictEqual(typeof escapeStr, 'string')
 assert.strictEqual(escapeStr.includes("'"), true)

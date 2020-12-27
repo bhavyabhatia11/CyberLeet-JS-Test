@@ -8,7 +8,14 @@
  *
  * @next sentence
  */
-
+function repeat(str, num){
+    var finalStr="";
+    for(var i=0; i<num;i++){
+        finalStr = finalStr.concat(str);
+    }
+   
+    return finalStr;
+}
 //* Begin of tests
 const assert = require('assert')
 

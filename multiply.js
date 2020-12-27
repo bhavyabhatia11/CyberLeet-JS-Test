@@ -10,7 +10,23 @@
  */
 
 // Your code :
+function multiply (x,y){
+    var isNegative = false;
+    var res = 0;
 
+    if((x<0 && y>0) || (x>0 && y<0)) isNegative = true;
+
+    x= Math.abs(x)
+    y =Math.abs(y)
+
+    while(x--){
+        res += y
+    }
+
+    if(isNegative)return -res;
+
+    return res
+}
 //* Begin of tests
 const assert = require('assert')
 

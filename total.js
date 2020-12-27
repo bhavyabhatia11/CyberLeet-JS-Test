@@ -6,7 +6,13 @@
  *
  * @next multiply
  */
-
+function total(arr){
+    var sum = 0;
+    for(var i=0; i<arr.length; i++){
+        sum = sum + arr[i];
+    }  
+    return sum
+}
 
 //* Begin of tests
 const assert = require('assert')

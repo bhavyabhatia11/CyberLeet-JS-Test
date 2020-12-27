@@ -7,7 +7,13 @@
  * @next sign
  */
 
+function isPositive(num){
+    if(num>0)return true
 
+    return false
+
+
+}
 
 //* Begin of tests
 const assert = require('assert')

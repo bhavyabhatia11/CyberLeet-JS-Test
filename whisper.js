@@ -6,6 +6,14 @@
  *
  * @next yell
  */
-
+function whisper(str){
+    if(str.length ==0)return undefined;
+    return str.toLowerCase();
+}
 // You must write your own tests
-throw Error('No tests !')
+const assert = require('assert')
+
+assert.strictEqual(typeof whisper, 'function')
+assert.strictEqual(whisper.length, 1)
+assert.deepStrictEqual(whisper('iNtErn'),'intern')
+

@@ -9,6 +9,11 @@
  */
 
 // Your code :
+function getLast(arr){
+    if(arr.length == 0)return undefined
+
+    return arr[arr.length -1];
+}
 
 //* Begin of tests
 const assert = require('assert')
